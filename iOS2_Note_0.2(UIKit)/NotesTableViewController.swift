@@ -45,7 +45,6 @@ class NotesTableViewController: UITableViewController {
 extension NotesTableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        print(models)
         return models.count
     }
     
@@ -85,7 +84,6 @@ extension NotesTableViewController {
                                       preferredStyle: UIAlertController.Style.alert)
         
         alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: { _ in
-//            self.models.remove(at: indexPath.row)
             let noteToDelete = self.models[indexPath.row]
             CoreDataHelper.deleteNote(note: noteToDelete)
 
