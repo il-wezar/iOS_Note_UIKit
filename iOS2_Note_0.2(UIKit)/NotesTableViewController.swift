@@ -24,7 +24,6 @@ class NotesTableViewController: UITableViewController {
         title = "Notes"
         
         tableView.register(TableViewCell.self, forCellReuseIdentifier: TableViewCell.identifier)
-//        tableView.dataSource = self
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(rightButtonOnNavigation))
 
